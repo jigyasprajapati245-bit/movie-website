@@ -1,0 +1,439 @@
+*{
+    margin: 0px;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    color: rgb(229, 233, 236);
+}
+
+.headbar{
+    height: 90px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: rgb(10, 226, 190);
+    position: relative;
+    display: flex;
+}
+.headbar h1{
+    font-size: 60px;
+}
+.headbar .home{
+     position: absolute;
+     left: 20pc;
+     top: 29px;
+    font-size: 25px;
+
+}
+.headbar .movieh{
+    position: absolute;
+     left: 28pc;
+     top: 29px;
+    font-size: 29px;
+}
+.headbar .profile .img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+     left: 40pc;
+     top: 20px;
+     background-color: #26e083;
+     height: 3pc;
+    width: 3pc;
+    border-radius: 50%;
+   
+}
+.headbar .profile p{
+      display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+     left: 44pc;
+     top: 35px;
+     color: rgb(203, 200, 200);
+}
+
+
+.sidebar{
+    width: 90px;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    color: aqua;
+    position: fixed;
+    
+    
+}
+
+
+.style-contenor{
+    background-color: rgb(12, 12, 12);
+    height: 100pc;
+    width: 75.5pc;
+    margin-left: 5pc;
+    position: relative;
+
+    
+}
+.img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 38pc;
+    width: 74pc;
+    animation: slider 11s linear infinite;
+    background-size: cover;
+    
+}
+@keyframes slider {
+    0%{ background-image:url('../../../moviepic/images (22).jpeg');}
+    25%{ background-image:url('../../../moviepic/wallpapersden.com_game-of-thrones-television-show-wallpaper_1920x1080.jpg');}
+    50%{ background-image:url('../../../moviepic/images (33).jpeg');}
+    75%{ background-image:url('../../../moviepic/images (30).jpeg');}
+    100%{background-image:url('../../../moviepic/strenger things pc.jpeg');}
+}
+    
+.head h1{
+   
+    font-size: 90px;
+    position: relative;
+    top: 10pc;
+    left: 20px;
+    color: rgb(91, 210, 240);
+    text-shadow: 5px 5px 5px rgb(198, 238, 245);
+    -webkit-text-stroke: 2px rgb(39, 210, 216);
+    
+}
+.head p{
+    
+    font-size: 65px;
+    position: relative;
+    top: 11pc;
+    left: 20px;
+    color: rgb(23, 207, 207);
+     text-shadow: 5px 5px 5px rgb(198, 238, 245);
+    -webkit-text-stroke: 2px rgb(39, 210, 216);
+}
+.head button{
+    background-color: #1da9b3;
+    padding: 10px 19px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    position: relative;
+    left:30px;
+    top: 13pc;
+    box-shadow: 5px 5px 10px rgb(214, 238, 241);
+    font-size: 16px;
+    
+}
+
+/* FRIST SLIDER
+*/
+
+h1{
+    font-size: 40px;
+    margin: 5px;
+}
+.movie-list-con{
+    padding: 20px;
+
+    
+    
+}
+.movie-list-wrapper{
+    position: relative ;
+}
+
+
+.movie-list{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+    background-color: transparent;
+    transition: transform 0.5s ease-in-out;
+}
+
+.movie-list-item{
+    transition: all 1s ease-in-out;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: transparent;
+    position: relative;
+    background-color: black;
+
+
+}
+.movie-list-item img{
+    border: 5px solid rgb(10, 10, 10);
+    width: 250px;
+    height: 270px;
+    object-fit: cover;
+    transition: all 1s ease-in-out;
+    background-color:transparent;
+    opacity: 2;
+    border-radius: 10px;
+    
+   
+
+}
+.movie-list-item:hover .imge-slider{
+    transform: scale(1.2);
+    margin-right: 30px;
+    margin-left: 30px;
+    opacity: 0.2;
+    border: 2px solid rgb(17, 143, 216);
+    box-shadow: 2px 2px 5px rgb(140, 172, 182);
+
+ 
+}
+.movie-list-item span{
+    position:absolute;
+    top:35%;
+    left: 40px;
+    font-size: 28px;
+    opacity: 0;
+    
+    background: transparent;
+    backdrop-filter: blur(10px);
+    padding: 1px 1px;
+    border-radius: 5px;
+    color: brown;
+    transition: 1s all ease-in-out;
+}
+.movie-list-item p{
+    position: absolute;
+    top: 55%;
+    left:40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+   opacity: 0;
+
+    background: transparent;
+    backdrop-filter: blur(10px);
+    padding: 12px 10px;
+    border-radius: 5px;
+    color: blue;
+    transition: 2s all ease-in-out;
+}
+.movie-list-item button{
+    position: absolute;
+    top: 77%;
+    left: 48px;
+    background-color: green;
+    border: none;
+    padding: 8px 10px ;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0;
+    transition: 2s all ease-in-out;
+    backdrop-filter: blur(5px);
+
+}
+ .movie-list-item:hover .imge-slider,
+ .movie-list-item:hover .span,
+ .movie-list-item:hover .item-p,
+ .movie-list-item:hover .item-bu{
+    opacity: 1;
+
+}
+.nextbut{
+    position:absolute;
+    top: -30px;
+    left: 50pc;
+    background-color: rgb(73, 180, 241) ;
+    border: none;
+    padding: 2px 15px;
+    border-radius: 5px;
+    font-size: 19px;
+    text-align: center;
+    opacity: 0.8;
+    transition: all 0.5s ease-in-out;
+}
+.nextbut:hover{
+    background: black;
+    border: solid 2px rgb(73, 180, 241) ; 
+    color: rgb(73, 180, 241);
+}
+.prevbut{
+    position:absolute;
+    top: -30px;
+    left: 46.5pc;
+    opacity: 0.8;
+    background-color: rgb(73, 180, 241) ;
+    border: none;
+    padding: 2px 15px;
+    border-radius: 5px;
+    font-size: 19px;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+
+}
+.prevbut:hover{
+    background: black;
+    border: solid 2px rgb(73, 180, 241) ; 
+    color: rgb(73, 180, 241);
+}
+
+
+
+/* SECOND SLIDER*/
+
+.conatiner3{
+    position: absolute;
+    top:72pc;
+    left: 10px;
+    transform: translate(-50% -50%);
+    width: 1000px;
+    height: 500px;
+    background-color: aqua;
+    box-shadow: 2px 2px 5px rgb(131, 130, 130);
+    border-radius: 5px;
+}
+.conatiner3 .slider3 .item{
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    border-radius: 20px;
+    background-position: 50% 50%;
+    background-size: cover;
+    transition: 0.5s;
+    display: inline-block;
+  
+}
+.slider3 .item:nth-child(1),
+.slider3 .item:nth-child(2){
+    top: 0;
+    left: 0;
+    transform: translate(0,0);
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+    border: solid 2px black;
+    box-shadow: 5px 5px 10px rgb(70, 69, 69);
+    border-radius: 5px;
+    
+}
+.slider3 .item:nth-child(3){
+   top: 60%;
+    left:50%;
+    border: solid 2px black;
+    background-size: cover;
+}
+.slider3 .item:nth-child(4){
+   top: 60%;  
+    left: calc(50% + 210px);
+    border: solid 2px black;
+}
+.slider3 .item:nth-child(5){
+     top: 60%;
+    left: calc(50% + 420px);
+    border: solid 2px black;
+}
+.slider3 .item:nth-child(6){
+   top: 60%;
+    left: calc(50% + 630px);
+    border: solid 2px black;
+    opacity: 0;
+}
+.item .content{
+    position: absolute;
+    top: 20%;
+    color: rgb(204, 38, 38);
+    left: 100px; 
+    width: 300px;
+    text-align: left;
+    font-weight:900px;
+    display: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.slider3 .item:nth-child(2) .content{
+    display: block;
+}
+
+.content .name{
+    font-size: 70px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.3s 1 forwards; 
+}
+.content .des{
+    font-size: 40px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.6s 1 forwards; 
+    
+}
+.content button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(22, 168, 22);
+    font-size: 17px;
+      opacity: 0;
+        animation: animate 1s ease-in-out forwards; 
+}
+@keyframes animate {
+    from{
+        opacity: 0;
+        transform: translate(0,100px);
+        filter: blur(38px);
+    }
+    to{
+         opacity: 1;
+        transform: translate(0);
+        filter: blur(o);
+    }
+ 
+}
+.button{
+    position: absolute;
+    top:100pc;
+    left: 35%;
+    display: flex;
+
+}
+.button .prev{
+    padding: 4px 15px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin: 5px;
+    border: none;
+    transition: all 0.5s ease-in-out;
+    background-color: rgb(73, 180, 241);
+}
+.button .prev:hover{
+    background-color: black;
+    color: rgb(73, 180, 241);
+}
+.button .next{
+    background-color: rgb(73, 180, 241);
+    padding: 4px 15px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin: 5px;
+    border: none;
+    transition: all 0.5s ease-in-out;
+}
+.button .next:hover{
+    background-color: black;
+    color: rgb(73, 180, 241);
+}
+
+
+
+.movie-list-con-2{
+    padding: 20px;
+
+    
+    
+}
+.movie-list-wrapper2{
+    position: relative;
+    top: 38pc;
+    
+}
+
+
+
